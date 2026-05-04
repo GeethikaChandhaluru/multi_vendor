@@ -4,7 +4,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 // Define a service using a base URL and expected endpoints
 export const authApi = createApi({
   reducerPath: "authApi",
-  baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:8000/api/auth" }),
+  baseQuery: fetchBaseQuery({ baseUrl: "https://multi-vendor-80b3.onrender.com/api/auth" }),
   endpoints: (builder) => ({
     // getAllTodos: builder.query({
     //   query: () => `/`,

@@ -3,7 +3,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 export const ordersApi = createApi({
     reducerPath: "ordersApi",
     baseQuery: fetchBaseQuery({
-        baseUrl: "http://localhost:8000/api",
+        baseUrl: "https://multi-vendor-80b3.onrender.com/api",
         prepareHeaders: (headers) => {
             const token = localStorage.getItem("token");
             if (token) headers.set("x-auth-token", token);
