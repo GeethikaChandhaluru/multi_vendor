@@ -31,27 +31,19 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
     children: [
+      { index: true, element: <Login /> },   // ⭐ THIS IS THE FIX
+
       { path: "/counter", element: <Counter /> },
       { path: "/todolist", element: <Todolist /> },
       { path: "/products", element: <Products /> },
-      {
-        path: "/recipes",
-        element: <Recipes />,
-        children: [
-          { path: "/recipes/recipeDetails/:id", element: <RecipeDetails /> },
-        ],
-      },
-      { path: "/mytodos", element: <Mytodos /> },
       { path: "/login", element: <Login /> },
       { path: "/signup", element: <Signup /> },
 
-      // Vendor routes
       { path: "/vendor/dashboard", element: <VendorDashboard /> },
       { path: "/vendor/add-product", element: <AddProduct /> },
       { path: "/vendor/products", element: <ManageProducts /> },
       { path: "/vendor/orders", element: <VendorOrders /> },
 
-      // Buyer routes
       { path: "/buyer/dashboard", element: <BuyerDashboard /> },
       { path: "/buyer/browse", element: <BrowseProducts /> },
       { path: "/buyer/cart", element: <Cart /> },

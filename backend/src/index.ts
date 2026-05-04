@@ -17,7 +17,7 @@ const port = process.env.PORT || 5000;
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://cozy-crumble-267145.netlify.app"
+    "https://multi-vendor-web-application.netlify.app"
   ],
   credentials: true
 }));
