@@ -1,0 +1,7 @@
+@import url("../node_modules/bootstrap/dist/css/bootstrap.min.css");
+.mybox{
+  margin:20px;
+  padding:20px;
+  border:2px solid;
+  border-radius: 10px;
+}
